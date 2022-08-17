@@ -2,3 +2,9 @@ LETTERS = { '.-' => 'A',  '-...' => 'B',  '-.-.' => 'C',  '-..' => 'D',  '.' => 
   '--' => 'M',  '-.' => 'N',  '---' => 'O',  '.--.' => 'P',  '--.-' => 'Q',  '.-.' => 'R',  '...' => 'S',  '-' => 'T',  '..-' => 'U',  '...-' => 'V',  '.--' => 'W',  '-..-' => 'X',  '-.--' => 'Y',  '--..' => 'Z'
 } 
 
+def convert_word(word)
+  arr = []
+  m_word = word.split
+  normal_word = m_word.each { |w| arr.push(LETTERS[w])}
+  arr = arr.join('')
+end
