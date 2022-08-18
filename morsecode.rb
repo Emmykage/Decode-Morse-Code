@@ -3,10 +3,14 @@ LETTERS = { '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D', '.' => 'E',
             '---' => 'O', '.--.' => 'P', '--.-' => 'Q', '.-.' => 'R', '...' => 'S', '-' => 'T', '..-' => 'U',
             '...-' => 'V', '.--' => 'W', '-..-' => 'X', '-.--' => 'Y', '--..' => 'Z' }.freeze
 
+def convert_char(char)
+  LETTERS[char]
+end
+
 def convert_word(word)
   arr = []
   m_word = word.split
-  m_word.each { |w| arr.push(LETTERS[w]) }
+  m_word.each { |w| arr.push(convert_char(w)) }
   arr = arr.join
 end
 
