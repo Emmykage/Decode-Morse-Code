@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Studio Ghibli Movies
+# Morse decoder
 
 > In this project we use some Ruby methods to decode a moirse code string.
 
